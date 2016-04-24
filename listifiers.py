@@ -8,11 +8,7 @@ class JsonListifyCommand(sublime_plugin.TextCommand):
                 'end' : ']',
         })
 
-        for region in self.view.sel():
-            if not region.empty():
-                self.view.replace(edit, 
-                                         region,
-                                         listifier.listify(self.view.substr(region)))
+        listifier.modify_regions(self.view, edit)
 
 class SqlListifyCommand(sublime_plugin.TextCommand):
 
@@ -22,8 +18,4 @@ class SqlListifyCommand(sublime_plugin.TextCommand):
                 'end' : ')',
         })
         
-        for region in self.view.sel():
-            if not region.empty():
-                self.view.replace(edit, 
-                                         region,
-                                         listifier.listify(self.view.substr(region)))                                        
+        listifier.modify_regions(self.view, edit)

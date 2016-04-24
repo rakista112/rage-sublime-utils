@@ -12,3 +12,10 @@ class Listifier(object):
                                                                output = self.gap.join(split_str),
                                                                end = self.stops['end'])
         return  output
+
+    def modify_regions(self, view, edit):
+        for region in view.sel():
+            if not region.empty():
+                view.replace(edit, 
+                                   region,
+                                   self.listify(view.substr(region)))
