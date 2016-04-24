@@ -1,2 +1,2 @@
-# rage-sublime-utils
+# Rage's Sublime Utils
 Some handy tools to use at work when you need to process results from other programs to use them in other programs.
