@@ -14,6 +14,6 @@ class SqlListifyCommand(sublime_plugin.TextCommand):
             "start": "('",
             "end": "')"
         }
-        split_str = input.split("\n")
+        split_str = input.strip().split("\n")
         output = stops['start'] + gap.join(split_str) + stops['end']
         return  output
