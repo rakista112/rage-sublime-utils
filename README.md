@@ -45,3 +45,19 @@ With a list like this
 Using **JSON Listify**, you'll get this
 
 `["1239595","1235123","123599","2131235"]`
+
+## Unlistify
+**Unlistify** turns the delimited list into a newline separated list. Good for when you want to reuse the list in a spreadsheet for more processing.
+
+### Example
+With a list like this
+
+```
+["1239595","1235123","123599","2131235"]
+```
+
+Using **Unlistify**, you'll get this
+123
+1235
+123
+51235
