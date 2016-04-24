@@ -1,3 +1,4 @@
 [
-    { "caption": "RageUtils: SQL Listify", "command": "sql_listify" }
+    { "caption": "RageUtils: SQL Listify", "command": "sql_listify" },
+    { "caption": "RageUtils: JSON Listify", "command": "json_listify" }
 ]

@@ -24,3 +24,20 @@ To use the plugin, just
 4. Press Enter and you'll get a list like this.
 
 `('1239595','1235123','123599','2131235')`
+
+## JSON Listify
+**JSON Listify** works the same way as **SQL Listify** but it double quotes everything in the list and uses square brackets `[]` instead of parentheses.
+
+### Example
+With a list like this
+
+```
+1239595
+1235123
+123599
+2131235
+```
+
+Using **JSON Listify**, you'll get this
+
+`["1239595","1235123","123599","2131235"]`
