@@ -19,7 +19,7 @@ class UnlistifyCommand(sublime_plugin.TextCommand):
         # 3. remove all quotes
         # 4. join with newlines
 
-        element_pattern = re.compile('[\'"](\S*)[\'"]')
+        element_pattern = re.compile('[\'"]([\w\s]*)[\'"]')
         without_tags = input[1:-1]
         elements = element_pattern.findall(without_tags)
         return "\n".join(elements)
